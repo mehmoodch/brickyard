@@ -37,11 +37,35 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0.2'      
-      - name: executing remote ssh commands using password
+      # - name: executing remote ssh commands using password
+      #   uses: appleboy/ssh-action@v1.0.3
+      #   with:
+      #       host: ${{ secrets.REMOTE_HOST }}
+      #       username: ${{ secrets.REMOTE_USER }}
+      #       password: ${{ secrets.REMOTE_PASSWORD }}
+      #       port: ${{ secrets.REMOTE_PORT }}
+      #       script: whoami
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Add remote server to known hosts
+        run: |
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy code via rsync
+        run: |
+          rsync -avz --exclude='.git' -e "ssh -i ~/.ssh/id_rsa -p ${{ secrets.REMOTE_PORT }}" . ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: executing remote ssh commands using private key
         uses: appleboy/ssh-action@v1.0.3
         with:
-            host: ${{ secrets.REMOTE_HOST }}
-            username: ${{ secrets.REMOTE_USER }}
-            password: ${{ secrets.REMOTE_PASSWORD }}
-            port: ${{ secrets.REMOTE_PORT }}
-            script: whoami
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          script: whoami
