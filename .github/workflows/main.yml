@@ -47,7 +47,7 @@ jobs:
           REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
          
         run: |
-          echo "$SSH_PRIVATE_KEY" > id_rsa1
-          chmod 600 id_rsa1
-          rsync -avz --exclude='.git' -e "ssh -i id_rsa1 -p $REMOTE_PORT" . $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH
-          rm id_rsa1
+          echo "$SSH_PRIVATE_KEY" > id_rsa.pem
+          chmod 600 id_rsa.pem
+          rsync -avz --exclude='.git' -e "ssh -i id_rsa.pem -p $REMOTE_PORT" . $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH
+          rm id_rsa.pem
