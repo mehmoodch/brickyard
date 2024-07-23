@@ -1,0 +1,14 @@
+{
+    "name": "mehmoodch/brickyard",
+    "description": "This is an automation project",
+    "type": "composer-plugin",
+    "require": {
+        "composer/composer": "^2.7"
+    },
+    "authors": [
+        {
+            "name": "Mehmood"
+        }
+    ],
+    "minimum-stability": "beta"
+}
