@@ -434,7 +434,7 @@
               </div>
               <h3>Brokrage Services</h3>
               <p>Our Brokerage services involve the facilitation of transactions between buyers and sellers in real estate industry.
-                 We make sure the transactions are conducted smoothly and efficiently.</p>
+                 We ensure the transactions are conducted smoothly and efficiently according to local laws. We assist clients with secure financing.</p>
             </div>
           </div>
           <div class="col-lg-12 mt-5 d-flex justify-content-center align-items-center" id="porject_button_div">
