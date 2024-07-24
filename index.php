@@ -432,9 +432,9 @@
               <div class="icon-wrapper">
                 <i class="fas fa-plug"></i>
               </div>
-              <h3>Sustainable Property Solutions</h3>
-              <p>Brickyard Property Management is committed to sustainable and eco-friendly property management. Our sustainable property solutions include energy-efficient upgrades, waste reduction initiatives, 
-                and environmentally conscious maintenance practices to enhance the value of your property while contributing to a greener planet.</p>
+              <h3>Brokrage Services</h3>
+              <p>Our Brokerage services involve the facilitation of transactions between buyers and sellers in real estate industry.
+                 We make sure the transactions are conducted smoothly and efficiently.</p>
             </div>
           </div>
           <div class="col-lg-12 mt-5 d-flex justify-content-center align-items-center" id="porject_button_div">
