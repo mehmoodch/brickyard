@@ -45,4 +45,9 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             port: ${{ secrets.REMOTE_PORT }}
             passphrase: ${{ secrets.KEY_PASSPHRASE }}
-            script: whoami
+            
+            script: |
+              cd ${{ secrets.REMOTE_PATH }}
+              git pull ${{secrets.REPO_URL}}
+              docker-compose down 
+              docker-compose up --build -d
