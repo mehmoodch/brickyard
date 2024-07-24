@@ -242,7 +242,7 @@
                                             <textarea id="referencesname" name="referencesname" rows="4" cols="50"></textarea>
                                             </div>
                                             <div>
-                                            <label for="portfolio">Portfolio or Work Samples:</label>
+                                            <label for="portfolio">Portfolio Link:</label>
                                             <input type="url" id="portfolio" name="portfolio">
                                             </div>
                                         </div>

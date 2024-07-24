@@ -37,14 +37,6 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0.2'      
-      # - name: executing remote ssh commands using password
-      #   uses: appleboy/ssh-action@v1.0.3
-      #   with:
-      #       host: ${{ secrets.REMOTE_HOST }}
-      #       username: ${{ secrets.REMOTE_USER }}
-      #       password: ${{ secrets.REMOTE_PASSWORD }}
-      #       port: ${{ secrets.REMOTE_PORT }}
-      #       script: whoami
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v1.0.3
         with:
