@@ -166,7 +166,7 @@
                                         <legend>Professional Information</legend>
                                         <div class="form-row">
                                             <div>
-                                            <label for="resume">Resume/CV:</label>
+                                            <label for="resume">Resume/CV (.pdf Only):</label>
                                             <input type="file" id="resume" name="resume" required>
                                             </div>
                                             <div>
@@ -254,22 +254,18 @@
                                         </div>
                                         </fieldset>
 
-                                        <input type="submit" value="Submit Application">
+                                       
+                                        <div class="col-lg-12 mt-5 d-flex justify-content-center align-items-center" id="porject_button_div">
+                                        <input type="submit" value="Submit Application" class="button">
+                                            
+                                        </div>
                                     </form>
                                     </div>
                                     </div>
 
                             </div>
                           </div>
-                          <div class="col-lg-12 mt-5 d-flex justify-content-center align-items-center" id="porject_button_div">
-                            <a class="button" href="#contactus" id="">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              Contact Now &rarr;
-                            </a>
-                          </div>
+                          
                         </div>
                       </div>
                     </section>

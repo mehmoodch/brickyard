@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $servername = "localhost";
-$username = "root";  // replace with your MySQL username
-$password = "";      // replace with your MySQL password
-$dbname = "brickyard"; // replace with your database name
+$username = "root";
+$password = "";
+$dbname = "brickyard";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -36,22 +36,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Handle file upload
     if ($_FILES['resume']['size'] > 0) {
-        $resume = file_get_contents($_FILES['resume']['tmp_name']);
-        $resume = $conn->real_escape_string($resume);
+        $uploads_dir = __DIR__ . '/admin/uploads';
+        if (!is_dir($uploads_dir)) {
+            mkdir($uploads_dir, 0777, true);
+        }
+
+        $resume_path = $uploads_dir . '/' . basename($_FILES['resume']['name']);
+        if (move_uploaded_file($_FILES['resume']['tmp_name'], $resume_path)) {
+            $resume_path_db = 'uploads/' . basename($_FILES['resume']['name']);
+        } else {
+            echo "Failed to move uploaded file.";
+            exit;
+        }
     } else {
-        $resume = NULL;
+        $resume_path_db = NULL;
     }
 
-    // Insert data into database
-    $sql = "INSERT INTO applications (name, email, phone, address, position, location, resume, linkedin, cover_letter, education, experience, employers, skills, certifications, start_date, employment_type, referencesname, portfolio, referral) VALUES ('$name', '$email', '$phone', '$address', '$position', '$location', '$resume', '$linkedin', '$cover_letter', '$education', '$experience', '$employers', '$skills', '$certifications', '$start_date', '$employment_type', '$referencesname', '$portfolio', '$referral')";
+    $sql = "INSERT INTO applications (name, email, phone, address, position, location, resume, linkedin, cover_letter, education, experience, employers, skills, certifications, start_date, employment_type, referencesname, portfolio, referral) VALUES ('$name', '$email', '$phone', '$address', '$position', '$location', '$resume_path_db', '$linkedin', '$cover_letter', '$education', '$experience', '$employers', '$skills', '$certifications', '$start_date', '$employment_type', '$referencesname', '$portfolio', '$referral')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
+        header("Location: career.php");
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    // Close connection
     $conn->close();
 }
 ?>

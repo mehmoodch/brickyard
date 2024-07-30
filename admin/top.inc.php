@@ -46,17 +46,9 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                   <li class="menu-item-has-children dropdown">
                      <a href="subscriptions.php" > SUBSCRIPTIONS </a>
                   </li>
-                  
-                  <!--<li class="menu-item-has-children dropdown">
-                     <a href="categories.php" > CATEGORIES </a>
-                  </li>                
-				  <li class="menu-item-has-children dropdown">
-                     <a href="users.php" > CUSTOMER MANAGEMENT </a>
-                  </li>
-				  <li class="menu-item-has-children dropdown">
-                     <a href="coupon_master.php" > COUPON </a>
-                  </li>-->
-				  
+                  <li class="menu-item-has-children dropdown">
+                     <a href="view_applications.php" > View Job Applications </a>
+                  </li>				  
 				  <?php } ?>
                </ul>
             </div>
