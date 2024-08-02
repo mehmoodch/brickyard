@@ -123,7 +123,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="innertable">
-                            <form action="submit_application.php" method="post" enctype="multipart/form-data">
+                            <form action="submit_application.php" method="post" enctype="multipart/form-data" onSubmit="alert('Data Submitted Successfully!');">
                                         <fieldset>
                                         <legend>Personal Information</legend>
                                         <div class="form-row">
@@ -270,54 +270,56 @@
                       </div>
                     </section>
    
-    <footer>
+                    <footer>
       <div class="content">
         <div class="top">
           <div class="logo-details">
             <span class="logo_name"><img src="images/Brickyard-logo.png" alt="footer-logo" class="img-fluid footer-logo"></span>
           </div>
           <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61562999425109"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@brickyardrealestate?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/brickyardrealestatellc/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/brickyard-real-estate-4180b0321/"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="link-boxes">
           <ul class="box">
             <li class="link_name">Our Companies</li>
-            <li><a href="#">Brickyard Real Estate LLC.</a></li>
-            <li><a href="#">Ewaan Square Technical Services.</a></li>
+            <li><a href="https://brickyard.ae/">Brickyard Real Estate LLC.</a></li>
+            <li><a href="https://ewansquare.ae/">Ewan Square Technical Services.</a></li>
+            <li><a href="https://skybluesdeveloper.ae/">Sky Blues Developer LLC. </a></li>
+            <li><a href="https://skycrest.ae/">Sky Crest Building Contracting LLC.</a></li>
             <li><a href="#">Hamarain Real Estate LLC.</a></li>
-            <li><a href="#">Sky Crest Building Contracting LLC.</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Useful Links</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ'S</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://brickyard.ae/">Home</a></li>
+            <li><a href="https://brickyard.ae/">About Us</a></li>
+            <li><a href="https://brickyard.ae/#Strategies">Projects</a></li>
+            <li><a href="https://brickyard.ae/#Services">Services</a></li>
+            <li><a href="https://brickyard.ae/#FAQS">FAQ'S</a></li>
+            <li><a href="https://brickyard.ae/#contactus">Contact Us</a></li>
+            <li><a href="https://brickyard.ae/career.php">Apply Now</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Recent Projects</li>
-            <li><a href="#">Estate Oasis Residences</a></li>
-            <li><a href="#">Harbor View Heights</a></li>
-            <li><a href="#">Urban Skyline Apartments</a></li>
-            <li><a href="#">Lakefront Retreat Condos</a></li>
-            <li><a href="#">Serenity Springs Estates</a></li>
-            <li><a href="#">Maple Grove Townhomes</a></li>
+            <li><a href="#">Reem One</a></li>
+            <li><a href="#">Asteco Project - RAK </a></li>
+            <li><a href="#">Linden Residences </a></li>
+            <li><a href="#">Oaks Deira</a></li>
+            <li><a href="#">Jabal Ali Downtown Plot</a></li>
+            <li><a href="#">Ras Al Khor - WareHouse</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Our Services</li>
-            <li><a href="#">Property Maintenance</a></li>
-            <li><a href="#">Tenant Management</a></li>
-            <li><a href="#">Property Marketing</a></li>
-            <li><a href="#">Financial Management</a></li>
-            <li><a href="#">Legal Compliance</a></li>
-            <li><a href="#">Vacancy Management</a></li>
+            <li><a href="#">Residential Property Management</a></li>
+            <li><a href="#">Commercial Property Management</a></li>
+            <li><a href="#">Luxury Property Management</a></li>
+            <li><a href="#">Property Investment Consultation</a></li>
+            <li><a href="#">Vacation Rental Management</a></li>
+            <li><a href="#">Brokrage Services</a></li>
           </ul>
           <ul class="box input-box">
             <li class="link_name">Subscribe</li>
@@ -339,6 +341,7 @@
         </div>
       </div>
     </footer>
+
     <div id="progress">
       <span id="progress-value">&#x1F815;</span>
     </div>
