@@ -57,7 +57,7 @@ jobs:
           REMOTE_DB_USER: ${{ secrets.REMOTE_DB_USER }}
           REMOTE_DB_PASSWORD: ${{ secrets.REMOTE_DB_PASSWORD }}
           REMOTE_DB_NAME: ${{ secrets.REMOTE_DB_NAME }}
-          DB_PORT: ${{ secrets.DB_PORT }}
+          REMOTE_DB_PORT: ${{ secrets.REMOTE_DB_PORT }}
         run: |
           sudo apt-get update
           sudo apt-get install -y mysql-client
@@ -65,4 +65,5 @@ jobs:
           echo "user=$REMOTE_DB_USER" >> .my.cnf
           echo "password=$REMOTE_DB_PASSWORD" >> .my.cnf
           echo "host=$REMOTE_DB_HOST" >> .my.cnf
-          mysql --defaults-extra-file=.my.cnf $REMOTE_DB_NAME < db/brickyard.sql
+          echo "port=$REMOTE_DB_PORT" >> .my.cnf
+          mysql --defaults-extra-file=.my.cnf $REMOTE_DB_PORT < db/brickyard.sql
