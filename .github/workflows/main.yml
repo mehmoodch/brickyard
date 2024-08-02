@@ -49,3 +49,12 @@ jobs:
             script: |
               cd ${{ secrets.REMOTE_PATH }}
               git pull ${{secrets.REPO_URL}}
+      - name: Update remote database
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_DB_USER: ${{ secrets.REMOTE_DB_USER }}
+          REMOTE_DB_PASSWORD: ${{ secrets.REMOTE_DB_PASSWORD }}
+          REMOTE_DB_NAME: ${{ secrets.REMOTE_DB_NAME }}
+        run: |
+          mysql -h $REMOTE_HOST -u $REMOTE_DB_USER -p$REMOTE_DB_PASSWORD $REMOTE_DB_NAME < db/brickyard.sql

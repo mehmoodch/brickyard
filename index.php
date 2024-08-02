@@ -60,6 +60,9 @@
               <li class="nav-item m-lg-2">
                 <a class="nav-link" href="#contactus">Contact Us </a>
               </li>
+              <li class="nav-item m-lg-2">
+                <a class="nav-link" href="brickyard.ae/career.php">Apply Now </a>
+              </li>
 
               <li class="nav-item m-lg-2">
               <a class="button  whatsapp-button" href="https://api.whatsapp.com/send?phone=043373565" target="_blank"> whatsapp </a>
