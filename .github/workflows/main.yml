@@ -25,7 +25,6 @@ jobs:
       - name: Install dependencies
         run: composer install
 
-
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -37,28 +36,33 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0.2'   
-          extensions: mbstring, mysqli   
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v1.0.3
+          php-version: '8.0.2'
+          extensions: mbstring, mysqli
+
+      - name: Executing remote SSH commands using SSH key
+        uses: appleboy/ssh-action@v0.1.7
         with:
-            host: ${{ secrets.REMOTE_HOST }}
-            username: ${{ secrets.REMOTE_USER }}
-            key: ${{ secrets.SSH_PRIVATE_KEY }}
-            port: ${{ secrets.REMOTE_PORT }}
-            passphrase: ${{ secrets.KEY_PASSPHRASE }}
-            
-            script: |
-              cd ${{ secrets.REMOTE_PATH }}
-              git pull ${{secrets.REPO_URL}}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          passphrase: ${{ secrets.KEY_PASSPHRASE }}
+          script: |
+            cd ${{ secrets.REMOTE_PATH }}
+            git pull origin master
+
       - name: Update remote database
         env:
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_DB_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_DB_USER: ${{ secrets.REMOTE_DB_USER }}
           REMOTE_DB_PASSWORD: ${{ secrets.REMOTE_DB_PASSWORD }}
           REMOTE_DB_NAME: ${{ secrets.REMOTE_DB_NAME }}
+          DB_PORT: ${{ secrets.DB_PORT }}
         run: |
           sudo apt-get update
           sudo apt-get install -y mysql-client
-          mysql --host=$REMOTE_HOST --user=$REMOTE_DB_USER --password=$REMOTE_DB_PASSWORD $REMOTE_DB_NAME < db/brickyard.sql
+          echo "[client]" > .my.cnf
+          echo "user=$REMOTE_DB_USER" >> .my.cnf
+          echo "password=$REMOTE_DB_PASSWORD" >> .my.cnf
+          echo "host=$REMOTE_DB_HOST" >> .my.cnf
+          mysql --defaults-extra-file=.my.cnf $REMOTE_DB_NAME < db/brickyard.sql
