@@ -43,7 +43,7 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.REMOTE_PORT || 1978 }}  # Default to port 22 if REMOTE_PORT is not set
+          proxy_port : ${{ secrets.REMOTE_PORT }}  # Default to port 22 if REMOTE_PORT is not set
           passphrase: ${{ secrets.KEY_PASSPHRASE }}
           script: |
             echo "Changing directory to ${{ secrets.REMOTE_PATH }}"
