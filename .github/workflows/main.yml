@@ -20,10 +20,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0.2'
-          extensions: mbstring, mysqli
 
       - name: Install dependencies
         run: composer install
+
 
   deploy:
     runs-on: ubuntu-latest
@@ -36,34 +36,16 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0.2'
-          extensions: mbstring, mysqli
-
-      - name: Executing remote SSH commands using SSH key
-        uses: appleboy/ssh-action@v0.1.7
+          php-version: '8.0.2'      
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.REMOTE_PORT }}
-          passphrase: ${{ secrets.KEY_PASSPHRASE }}
-          script: |
-            cd ${{ secrets.REMOTE_PATH }}
-            git pull origin master
-
-      - name: Update remote database
-        env:
-          REMOTE_DB_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_DB_USER: ${{ secrets.REMOTE_DB_USER }}
-          REMOTE_DB_PASSWORD: ${{ secrets.REMOTE_DB_PASSWORD }}
-          REMOTE_DB_NAME: ${{ secrets.REMOTE_DB_NAME }}
-          REMOTE_DB_PORT: ${{ secrets.REMOTE_DB_PORT }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y mysql-client
-          echo "[client]" > .my.cnf
-          echo "user=$REMOTE_DB_USER" >> .my.cnf
-          echo "password=$REMOTE_DB_PASSWORD" >> .my.cnf
-          echo "host=$REMOTE_DB_HOST" >> .my.cnf
-          echo "port=$REMOTE_DB_PORT" >> .my.cnf
-          mysql --defaults-extra-file=.my.cnf $REMOTE_DB_PORT < db/brickyard.sql
+            host: ${{ secrets.REMOTE_HOST }}
+            username: ${{ secrets.REMOTE_USER }}
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            port: ${{ secrets.REMOTE_PORT }}
+            passphrase: ${{ secrets.KEY_PASSPHRASE }}
+            
+            script: |
+              cd ${{ secrets.REMOTE_PATH }}
+              git pull ${{secrets.REPO_URL}}
