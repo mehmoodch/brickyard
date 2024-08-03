@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "brickyard";
+$username = 'ewangrou_root';
+$password = 'v3l(sx5CDO#8';
+$dbname = 'ewangrou_brickyard';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

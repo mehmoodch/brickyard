@@ -2,7 +2,7 @@
 session_start();
 
 // Database connection (replace with your actual credentials)
-$conn = new mysqli('localhost', 'root', '', 'brickyard');
+$conn = new mysqli('localhost', 'ewangrou_root', 'v3l(sx5CDO#8', 'ewangrou_brickyard');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

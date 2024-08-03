@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Database connection parameters
         $host = 'localhost';
-        $user = "root";
-        $password = "";
-        $database = 'brickyard';
+        $user = 'ewangrou_root';
+        $password = 'v3l(sx5CDO#8';
+        $database = 'ewangrou_brickyard';
 
         // Create a database connection
         $conn = new mysqli($host, $user, $password, $database);
