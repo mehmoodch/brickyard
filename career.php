@@ -92,7 +92,7 @@
                 <a class="nav-link" href="#contactus">Contact Us </a>
               </li>
               <li class="nav-item m-lg-2">
-                <a class="nav-link" href="brickyard.ae/career.php">Join Our Team </a>
+                <a class="nav-link" href="career.php">Join Our Team </a>
               </li>
 
               <li class="nav-item m-lg-2">
@@ -299,12 +299,12 @@
           <ul class="box">
             <li class="link_name">Useful Links</li>
             <li><a href="https://brickyard.ae/">Home</a></li>
-            <li><a href="https://brickyard.ae/">About Us</a></li>
-            <li><a href="https://brickyard.ae/#Strategies">Projects</a></li>
-            <li><a href="https://brickyard.ae/#Services">Services</a></li>
-            <li><a href="https://brickyard.ae/#FAQS">FAQ'S</a></li>
-            <li><a href="https://brickyard.ae/#contactus">Contact Us</a></li>
-            <li><a href="https://brickyard.ae/career.php">Apply Now</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ'S</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="career.php">Join Our Team</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Recent Projects</li>
