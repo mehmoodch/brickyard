@@ -61,7 +61,7 @@
                 <a class="nav-link" href="#contactus">Contact Us </a>
               </li>
               <li class="nav-item m-lg-2">
-                <a class="nav-link" href="brickyard.ae/career.php">Apply Now </a>
+                <a class="nav-link" href="brickyard.ae/career.php">Join Our Team </a>
               </li>
 
               <li class="nav-item m-lg-2">
