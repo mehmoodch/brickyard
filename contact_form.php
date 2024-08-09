@@ -36,6 +36,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
+    // Verify reCAPTCHA
+    $recaptchaSecret = '6LdYICMqAAAAABBTz1PxNv_vcQSPK7be1U3vK9jP';
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
+    $recaptchaURL = "https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaResponse}";
+    $verifyResponse = file_get_contents($recaptchaURL);
+    $responseData = json_decode($verifyResponse);
+
+    if (!$responseData->success) {
+        echo "reCAPTCHA verification failed. Please try again.";
+        exit();
+    }
+
     // Database connection parameters
     $host = 'localhost';
     $user = 'ewangrou_root';
@@ -55,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ssss", $cname, $cemail, $csubject, $cmessage);
 
     if ($stmt->execute()) {
-        // Redirect to the index.html page
+        // Redirect to the index.php page
         header("Location: index.php");
         exit();
     } else {
