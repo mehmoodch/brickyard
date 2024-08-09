@@ -21,7 +21,7 @@
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -332,6 +332,7 @@
                         </label>
                       </div>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LdYICMqAAAAAK9USEPLGpfuDBVArMkuJzNjRJ8x"></div>
                     <div class="col-md-12">
                       <button type="submit" class="btn btn-lg rounded-0 text-white mt-3 w-100" style="background-color: #c94b9c;"  id="contactForm" name="submit">Submit</button>
                     </div>
