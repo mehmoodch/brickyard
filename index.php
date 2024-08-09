@@ -92,7 +92,7 @@
             <div class="hero_right_content">
               <p>Looking for an expert advice for your property! Leave your message here.</p>
              
-              <form method="POST" action="process_form.php" class="form" onSubmit="alert('Data Submitted Successfully!');" > 
+              <form method="POST" action="process_form.php" class="form" id="form_process" onSubmit="alert('Data Submitted Successfully!');" > 
 
               <div class="container">
                   <div class="row">
@@ -332,7 +332,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LdYICMqAAAAAK9USEPLGpfuDBVArMkuJzNjRJ8x"></div>
+                    <!-- <div class="g-recaptcha" data-sitekey="6LdYICMqAAAAAK9USEPLGpfuDBVArMkuJzNjRJ8x"></div> -->
                     <div class="col-md-12">
                       <button type="submit" class="btn btn-lg rounded-0 text-white mt-3 w-100" style="background-color: #c94b9c;"  id="contactForm" name="submit">Submit</button>
                     </div>
@@ -1105,7 +1105,14 @@
             xhr.send(formData);
         });
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src="https://www.google.com/recaptcha/api.js?render=6LdYICMqAAAAAK9USEPLGpfuDBVArMkuJzNjRJ8x"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LdYICMqAAAAAK9USEPLGpfuDBVArMkuJzNjRJ8x', {action: 'submit'}).then(function(token) {
+            document.getElementById('form_process').submit();
+        });
+    });
+</script>
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
