@@ -813,6 +813,7 @@
                     <div class="details">
                       <span>Phone</span>
                       <span>(+971) 043373565</span>
+                      <span>(+971) 0501182342</span>
                     </div>
                   </div>
         
