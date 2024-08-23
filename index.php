@@ -74,7 +74,7 @@
               </li>
 
               <li class="nav-item m-lg-2">
-              <a class="button  whatsapp-button" href="https://api.whatsapp.com/send?phone=0501182342" target="_blank"> whatsapp </a>
+              <a class="button  whatsapp-button" href="https://api.whatsapp.com/send?phone=+9710501182342" target="_blank"> whatsapp </a>
               </li>
             </ul>
           </div>
