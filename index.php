@@ -74,7 +74,7 @@
               </li>
 
               <li class="nav-item m-lg-2">
-              <a class="button  whatsapp-button" href="https://api.whatsapp.com/send?phone=+9710501182342" target="_blank"> whatsapp </a>
+              <a class="button  whatsapp-button" href="https://api.whatsapp.com/send?phone=+971501182342" target="_blank"> whatsapp </a>
               </li>
             </ul>
           </div>
@@ -812,8 +812,8 @@
                     </div>
                     <div class="details">
                       <span>Phone</span>
-                      <span> +9710501182342 </span>
-                      <span> +971043373565 </span>
+                      <span> +971501182342 </span>
+                      <span> +97143373565 </span>
                     </div>
                   </div>
         
