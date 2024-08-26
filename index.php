@@ -24,13 +24,21 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16677863101">
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MN8N8EGX1J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-16677863101');
+  gtag('config', 'G-MN8N8EGX1J');
 </script>
+<!-- Event snippet for Website lead conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-16677863101/Y6k1CKySsc0ZEL39z5A-'});
+</script>
+
+
 </head>
 <body>
 
