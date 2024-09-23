@@ -52,7 +52,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.php">
-            <img src="images/Logo-Main-Brickyard.png" alt="logo" class="img-fluid" style="width: 160px; height: 84px; border-radius: 1px;">
+            <img src="images/Brickyard-logo-new.png" alt="logo" class="img-fluid" style="width: 160px; height: 84px; border-radius: 1px;">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
