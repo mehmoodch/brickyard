@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brickyard Real Estate LLC.</title>
     <!-- Favicon Link -->
-    <link rel="shortcut icon" href="images/Brickyard-logo.webp" type="image/x-icon" sizes="96x96">
+    <link rel="shortcut icon" href="images/Brickyard-logo-new.png" type="image/x-icon" sizes="96x96">
     <!-- Css Link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fontawesome Link -->
@@ -66,7 +66,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.php">
-            <img src="images/Brickyard-logo.png" alt="logo" class="img-fluid" style="width: 160px; height: 84px; border-radius: 1px;">
+            <img src="images/Brickyard-logo-new.png" alt="logo" class="img-fluid" style="width: 160px; height: 84px; border-radius: 1px;">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -277,7 +277,7 @@
       <div class="content">
         <div class="top">
           <div class="logo-details">
-            <span class="logo_name"><img src="images/Brickyard-logo.png" alt="footer-logo" class="img-fluid footer-logo"></span>
+            <span class="logo_name"><img src="images/Brickyard-logo-new.png" alt="footer-logo" class="img-fluid footer-logo"></span>
           </div>
           <div class="media-icons">
             <a href="https://www.facebook.com/profile.php?id=61562999425109"><i class="fab fa-facebook-f"></i></a>

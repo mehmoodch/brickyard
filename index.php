@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brickyard Real Estate LLC.</title>
     <!-- Favicon Link -->
-    <link rel="shortcut icon" href="images/Brickyard-logo.webp" type="image/x-icon" sizes="96x96">
+    <link rel="shortcut icon" href="images/Brickyard-logo-new.png" type="image/x-icon" sizes="96x96">
     <!-- Css Link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fontawesome Link -->
@@ -1028,7 +1028,7 @@
       <div class="content">
         <div class="top">
           <div class="logo-details">
-            <span class="logo_name"><img src="images/Brickyard-logo.png" alt="footer-logo" class="img-fluid footer-logo"></span>
+            <span class="logo_name"><img src="images/Brickyard-logo-new.png" alt="footer-logo" class="img-fluid footer-logo"></span>
           </div>
           <div class="media-icons">
             <a href="https://www.facebook.com/profile.php?id=61562999425109"><i class="fab fa-facebook-f"></i></a>
