@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
       <meta charset="utf-8">
       <title>Brickyard Real Estate LLC.</title>
     <!-- Favicon Link -->
-    <link rel="shortcut icon" href="images/Brickyard-logo.png" type="image/x-icon" sizes="96x96">
+    <link rel="shortcut icon" href="images/Brickyard-logo-new.png" type="image/x-icon" sizes="96x96">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>LOGIN PAGE</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
             <div class="login-content">
                <div class="login-form mt-150">
                <div >
-                  <center>   <img src="images/Brickyard-logo.png" alt="Description of the image"> </center>
+                  <center>   <img src="images/Brickyard-logo-new.png" alt="Description of the image"> </center>
                   </div>
                   <form style="padding-top: 22px" method="post">
                      <div class="form-group">
