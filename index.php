@@ -98,8 +98,8 @@
                 <h4>Leading Real Estate Brokerage: Guiding You Home </h4>
                 <h2>Expert Brokerage Services You Can Trust </h2>
                 <ul>
-                  <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Hassle-free property management</li>
-                  <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Turnkey building management</li>
+                  <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Find Your Perfect Property with Confidence</li>
+                  <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Turnkey brokerage services</li>
                   <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Securing a substantial rental revenue</li>
                 </ul>
                 <p > <u style="text-decoration-color: #c94b9c; text-decoration-thickness: 4px;">Brickyard Real Estate </u> providing end-to-end support for buyers and sellers, with a brokerage team dedicated to delivering seamless transactions and outstanding results.</p>
