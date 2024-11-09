@@ -841,7 +841,7 @@
                     </div>
                     <div class="details">
                       <span>Address</span>
-                      <span> Office# 706, Regal Tower, Business Bay<br> Dubai, United Arab Emirates</span>
+                      <span> Office# 706, Regal Tower, Business Bay Dubai, United Arab Emirates</span>
                     </div>
                   </div>
         
@@ -852,10 +852,10 @@
                 <!--  *******   Social Media Starts   *******  -->
         
                 <div class="socialMedia">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.facebook.com/people/Brickyard-Real-Estate-LLC/61562999425109/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.tiktok.com/@brickyardrealestate?"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/brickyardrealestatellc/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/brickyard-real-estate-4180b0321/"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
         
                 <!--  *******   Social Media Ends   *******  -->
