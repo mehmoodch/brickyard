@@ -95,14 +95,14 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
              <div class="hero_left_content">
-                <h4>Property management that you can trust in UAE. </h4>
-                <h2>A Better Way to Manage Property.</h2>
+                <h4>Leading Real Estate Brokerage: Guiding You Home </h4>
+                <h2>Expert Brokerage Services You Can Trust </h2>
                 <ul>
                   <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Hassle-free property management</li>
                   <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Turnkey building management</li>
                   <li style="list-style: none;"> <i class="fa-solid fa-paper-plane " style="color: #c94b9c;"></i> Securing a substantial rental revenue</li>
                 </ul>
-                <p > <u style="text-decoration-color: #c94b9c; text-decoration-thickness: 4px;">Our mission</u>  is to increase the value and reduce the total cost of ownership of luxury homes in UAE.</p>
+                <p > <u style="text-decoration-color: #c94b9c; text-decoration-thickness: 4px;">Brickyard Real Estate </u> providing end-to-end support for buyers and sellers, with a brokerage team dedicated to delivering seamless transactions and outstanding results.</p>
              </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -380,7 +380,7 @@
     <section class="about section-padding" id="Services" style="margin-top: 0px; padding-top:40px; background-color: #f7f7f7;">
       <div class="text-center">
         <h1 class="heading">
-        <i class="fa-solid fa-house"></i><strong><h2 class="text-dark">Welcome to Brickyard Property Management</h2></strong><i class="fa-solid fa-city"></i>
+        <i class="fa-solid fa-house"></i><strong><h2 class="text-dark">Welcome to Brickyard Real Estate</h2></strong><i class="fa-solid fa-city"></i>
       </h1>
       </div>
       <div class="row">
