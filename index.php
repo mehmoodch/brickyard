@@ -841,7 +841,7 @@
                     </div>
                     <div class="details">
                       <span>Address</span>
-                      <span> PO Box: 232972, The Village Community,<br> Dubai Investment Park, Phase 1, Dubai, United Arab Emirates</span>
+                      <span> Office# 706, Regal Tower, Business Bay<br> Dubai, United Arab Emirates</span>
                     </div>
                   </div>
         
